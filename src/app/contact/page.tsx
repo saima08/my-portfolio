@@ -1,6 +1,6 @@
 import { MailIcon } from "lucide-react";
 import React from "react";
-import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function ContactPage() {
   return (
@@ -21,10 +21,10 @@ export default function ContactPage() {
           </p>
 
           <div className="flex gap-4">
-            <a className="text-indigo-400 hover:text-indigo-300" href='https://www.linkedin.com/in/saima-qadri-b4a6582b9/' target='_blank'>
+            <a className="text-indigo-400 hover:text-indigo-300" href='https://www.linkedin.com/in/saima-qadri-b4a6582b9/' target='_blank' rel="noopener noreferrer">
               <FaLinkedin className="w-6 h-6" />
             </a>
-            <a className="text-indigo-400 hover:text-indigo-300" href="https://github.com/saima08" target="_blank">
+            <a className="text-indigo-400 hover:text-indigo-300" href="https://github.com/saima08" target="_blank" rel="noopener noreferrer">
               <FaGithub className="w-6 h-6" />
             </a>
             <a className="text-indigo-400 hover:text-indigo-300" href="mailto:saimaqadri008@gmail.com">
@@ -35,7 +35,7 @@ export default function ContactPage() {
 
         <div className="md:w-2/3">
           <h2 className="text-2xl font-medium mb-8">
-            Contact me, let's make magic together
+            Contact me, let&apos;s make magic together
           </h2>
 
           <form className="flex flex-col gap-4">
@@ -66,8 +66,6 @@ export default function ContactPage() {
           </form>
         </div>
       </div>
-
-
     </div>
   );
 }

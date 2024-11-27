@@ -56,7 +56,6 @@ const services = [
   },
 ];
 
-
 export default function LandingPage() {
   return (
     <div className="min-h-screen bg-[#0f1117] text-white">
@@ -64,7 +63,7 @@ export default function LandingPage() {
         {/* Hero Section */}
         <div className="flex flex-col md:flex-row items-center justify-between py-12">
           <div className="text-center md:text-left mb-12 md:mb-0">
-            <p className="text-xl md:text-2xl mb-2">Hello, I'm</p>
+            <p className="text-xl md:text-2xl mb-2">Hello, I&apos;m</p>
             <h2 className="text-4xl md:text-5xl font-bold mb-4">Saima Ishaq</h2>
             <p className="text-gray-400 mb-8 max-w-md">
               Front-end developer, UI designer. I create seamless web
@@ -113,8 +112,6 @@ export default function LandingPage() {
           </div>
         </section>
 
-
-
         {/* Contact Section */}
         <section className="py-16">
           <div className="flex flex-col md:flex-row justify-between gap-12">
@@ -148,13 +145,12 @@ export default function LandingPage() {
                   <MailIcon className="w-6 h-6 text-[#8b5cf6] hover:text-[#7c3aed] cursor-pointer" />
                 </a>
               </div>
-
             </div>
 
             {/* Contact Form */}
             <div className="max-w-md w-full">
               <h3 className="text-2xl mb-8">
-                Contact me, let's make magic together
+                Contact me, let&apos;s make magic together
               </h3>
               <form className="flex flex-col gap-6">
                 <input
