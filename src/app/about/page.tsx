@@ -5,7 +5,7 @@ import { TbBrandNextjs, TbBrandTypescript } from "react-icons/tb";
 
 export default function AboutMe() {
   return (
-    <div className="w-full min-h-screen bg-slate-900 text-white p-4 sm:p-8">
+    <div className="w-full min-h-screen bg-[#13131A] text-white p-4 sm:p-8">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 items-start">
           <div className="lg:w-2/5 xl:w-1/3">

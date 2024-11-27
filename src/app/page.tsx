@@ -113,7 +113,7 @@ export default function LandingPage() {
           </div>
         </section>
 {/* Contact Section */}
-<section className="py-16 px-20">
+<section className="py-16 lg:px-20">
   <div className="flex flex-col md:flex-row justify-between gap-8">
     {/* Contact Info */}
     <div>

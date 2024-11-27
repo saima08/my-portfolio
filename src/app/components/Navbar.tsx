@@ -6,8 +6,8 @@ import Link from "next/link";
 function Navbar() {
   return (
     <div className='bg-[#0f1117]'>
-      <nav className="flex flex-col md:flex-row justify-between items-center p-6 md:p-8">
-        <h1 className="text-[#8b5cf6] text-2xl font-bold mb-4 md:mb-0">
+      <nav className="flex flex-col md:flex-row justify-between items-center p-6 md:p-8 lg:px-16">
+        <h1 className="text-[#d6cfe9] text-2xl font-bold mb-4 md:mb-0">
           Saima 
         </h1>
         <div className="flex gap-8">
