@@ -59,33 +59,34 @@ const services = [
 export default function LandingPage() {
   return (
     <div className="min-h-screen bg-[#0f1117] text-white">
-      <main className="container mx-auto px-6">
+      <main className="container mx-auto px-24">
         {/* Hero Section */}
-        <div className="flex flex-col md:flex-row items-center justify-between py-12">
-          <div className="text-center md:text-left mb-12 md:mb-0">
-            <p className="text-xl md:text-2xl mb-2">Hello, I&apos;m</p>
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">Saima Ishaq</h2>
-            <p className="text-gray-400 mb-8 max-w-md">
-              Front-end developer, UI designer. I create seamless web
-              experiences for front-end users.
-            </p>
-            <Link href="/about">
-              <button className="bg-[#8b5cf6] px-6 py-3 rounded-md hover:bg-[#7c3aed] transition">
-                About Me
-              </button>
-            </Link>
-          </div>
-          <div className="relative">
-            <div className="w-72 h-72 md:w-80 md:h-80 bg-[#8b5cf6] rounded-full absolute -z-10 right-0 blur-sm"></div>
-            <Image
-              src="/images/profile.jpeg"
-              alt="Profile Image"
-              className="w-64 h-64 md:w-72 md:h-72 object-cover rounded-full border-4 border-white/10"
-              width={300}
-              height={300}
-            />
-          </div>
-        </div>
+        <div className="flex flex-col md:flex-row items-center justify-between py-12 md:px-8 ">
+  <div className="text-center md:text-left mb-8 md:mb-0 md:mr-8">
+    <p className="text-xl md:text-2xl mb-2">Hello, I&apos;m</p>
+    <h2 className="text-4xl md:text-5xl font-bold mb-4">Saima Ishaq</h2>
+    <p className="text-gray-400 mb-6 max-w-md">
+      Front-end developer, UI designer. I create seamless web
+      experiences for front-end users.
+    </p>
+    <Link href="/about">
+      <button className="bg-[#8b5cf6] px-6 py-3 rounded-md hover:bg-[#7c3aed] transition">
+        About Me
+      </button>
+    </Link>
+  </div>
+  <div className="relative flex-shrink-0">
+    <div className="w-64 h-64 md:w-72 md:h-72 bg-[#8b5cf6] rounded-full absolute -z-10 right-0 blur-sm"></div>
+    <Image
+      src="/images/profile.jpeg"
+      alt="Profile Image"
+      className="w-64 h-64 md:w-80 md:h-80 object-cover rounded-full border-4 border-white/10"
+      width={300}
+      height={300}
+    />
+  </div>
+</div>
+
 
         {/* Projects Section */}
         <section className="py-16">
@@ -111,69 +112,69 @@ export default function LandingPage() {
             ))}
           </div>
         </section>
+{/* Contact Section */}
+<section className="py-16 px-20">
+  <div className="flex flex-col md:flex-row justify-between gap-8">
+    {/* Contact Info */}
+    <div>
+      <h3 className="text-[#8b5cf6] text-2xl mb-4">Connect with me:</h3>
+      <p className="text-gray-400 mb-6">
+        Satisfied with me? Please contact me
+      </p>
+      <div className="flex gap-6">
+        <a
+          href="https://www.linkedin.com/in/saima-qadri-b4a6582b9/"
+          target="_blank"
+          className="transition"
+        >
+          <FaLinkedin className="w-6 h-6 text-[#8b5cf6] hover:text-[#7c3aed] cursor-pointer" />
+        </a>
 
-        {/* Contact Section */}
-        <section className="py-16">
-          <div className="flex flex-col md:flex-row justify-between gap-12">
-            {/* Contact Info */}
-            <div>
-              <h3 className="text-[#8b5cf6] text-2xl mb-4">Connect with me:</h3>
-              <p className="text-gray-400 mb-6">
-                Satisfied with me? Please contact me
-              </p>
-              <div className="flex gap-6">
-                <a
-                  href="https://www.linkedin.com/in/saima-qadri-b4a6582b9/"
-                  target="_blank"
-                  className="transition"
-                >
-                  <FaLinkedin className="w-6 h-6 text-[#8b5cf6] hover:text-[#7c3aed] cursor-pointer" />
-                </a>
+        <a
+          href="https://github.com/saima08"
+          target="_blank"
+          className="transition"
+        >
+          <FaGithub className="w-6 h-6 text-[#8b5cf6] hover:text-[#7c3aed] cursor-pointer" />
+        </a>
 
-                <a
-                  href="https://github.com/saima08"
-                  target="_blank"
-                  className="transition"
-                >
-                  <FaGithub className="w-6 h-6 text-[#8b5cf6] hover:text-[#7c3aed] cursor-pointer" />
-                </a>
+        <a
+          href="mailto:saimaqadri008@gmail.com"
+          className="transition"
+        >
+          <MailIcon className="w-6 h-6 text-[#8b5cf6] hover:text-[#7c3aed] cursor-pointer" />
+        </a>
+      </div>
+    </div>
 
-                <a
-                  href="mailto:saimaqadri008@gmail.com"
-                  className="transition"
-                >
-                  <MailIcon className="w-6 h-6 text-[#8b5cf6] hover:text-[#7c3aed] cursor-pointer" />
-                </a>
-              </div>
-            </div>
+    {/* Contact Form */}
+    <div className="max-w-md w-full">
+      <h3 className="text-2xl mb-8">
+        Contact me, let&apos;s make magic together
+      </h3>
+      <form className="flex flex-col gap-6">
+        <input
+          type="text"
+          placeholder="Name"
+          className="bg-[#161822] p-4 rounded-md focus:outline-none focus:ring-2 focus:ring-[#8b5cf6]"
+        />
+        <input
+          type="email"
+          placeholder="Email"
+          className="bg-[#161822] p-4 rounded-md focus:outline-none focus:ring-2 focus:ring-[#8b5cf6]"
+        />
+        <textarea
+          placeholder="Message"
+          className="bg-[#161822] p-4 rounded-md h-32 focus:outline-none focus:ring-2 focus:ring-[#8b5cf6] resize-none"
+        ></textarea>
+        <button className="bg-[#8b5cf6] px-8 py-3 rounded-md hover:bg-[#7c3aed] transition w-32">
+          Send
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
 
-            {/* Contact Form */}
-            <div className="max-w-md w-full">
-              <h3 className="text-2xl mb-8">
-                Contact me, let&apos;s make magic together
-              </h3>
-              <form className="flex flex-col gap-6">
-                <input
-                  type="text"
-                  placeholder="Name"
-                  className="bg-[#161822] p-4 rounded-md focus:outline-none focus:ring-2 focus:ring-[#8b5cf6]"
-                />
-                <input
-                  type="email"
-                  placeholder="Email"
-                  className="bg-[#161822] p-4 rounded-md focus:outline-none focus:ring-2 focus:ring-[#8b5cf6]"
-                />
-                <textarea
-                  placeholder="Message"
-                  className="bg-[#161822] p-4 rounded-md h-32 focus:outline-none focus:ring-2 focus:ring-[#8b5cf6] resize-none"
-                ></textarea>
-                <button className="bg-[#8b5cf6] px-8 py-3 rounded-md hover:bg-[#7c3aed] transition w-32">
-                  Send
-                </button>
-              </form>
-            </div>
-          </div>
-        </section>
       </main>
     </div>
   );
